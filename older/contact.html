@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyorbek Ismoilov - Contact</title>
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/logo.png">
+</head>
+<body>
+    <!-- header section -->
+   
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__brand">
+                <a href="index.html">
+                    <img  src="./images/logo.png" alt="logo"/>
+        
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <ul class="main-navigation__items">
+                    <li class="main-navigation__item">
+                        <a href="./index.html">Asosiy</a>
+                    </li> 
+        
+                    <li class="main-navigation__item">
+                        <a href="#">Men haqimda</a>
+                    </li>
+        
+                    <li class="main-navigation__item">
+                        <a href="#">Xizmatlar</a>
+                    </li>
+        
+                    <li class="main-navigation__item">
+                        <a href="#">Mijozlar</a>
+                    </li>
+        
+                    <li class="main-navigation__item">
+                        <a href="#">Portfolio</a>
+                    </li>
+        
+                    <li class="main-navigation__item">
+                        <a href="#">Blog</a>
+                    </li>
+        
+                    <li class="main-navigation__item">
+                        <a href="#">Sheriklar</a>
+                    </li>
+                    <li class="main-navigation__item active">
+                        <a href="./contact.html">Bog'lanish</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+    </header>
+    
+    <!-- / header section -->
+    <!-- Contact -->
+    <div class="container">
+        <section class="contact">
+            <div class="section-title" id="section-title">
+                Men bilan bog'laning
+            </div>
+            <form >
+                <input type="text" name="chat_id" id="" value="1468429008" hidden>
+                <textarea name="text" id="text"  rows="10" placeholder="Xabaringizni kiriting" required></textarea>
+                <div class="half-flex">
+                    <div class="contact__firstname">
+                    <input type="text" placeholder="Ismingizni kiriting"  id="fn" required>
+                </div>
+
+                <div class="contact__email">
+                    <input type="email" placeholder="Emailingizni kiriting"  id="em" required> 
+                </div>
+                </div>
+                <input type="text" placeholder="Xabar mazmuni"  id="sub">
+                <input type="text" name="parse_mode" value="html"  hidden>
+                <button  class="button contact__send"  id="button" onclick="send_message();">Xabar jo'natish</button>
+            </form>
+        </section>
+    </div>
+    <!-- /Contact -->
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__brand">
+                <img src="./images/linewhite.png" alt="logo">
+            </div>
+            <nav class="footer__navigation">
+                <ul class="footer__navigation-items">
+                    <li class="footer__navigation-item">
+                        <a href="#">Asosiy</a>
+            
+                    </li>
+    
+                    <li class="footer__navigation-item">
+                        <a href="#">Men haqimda</a>
+            
+                    </li>
+    
+                    <li class="footer__navigation-item">
+                        <a href="#">Xizmatlar</a>
+            
+                    </li>
+    
+                    <!-- <li class="footer__navigation-item">
+                        <a href="#">Mijozlar</a>
+            
+                    </li> -->
+    
+                    <li class="footer__navigation-item">
+                        <a href="#">Portfolio</a>
+            
+                    </li>
+                    <!-- <li class="footer__navigation-item">
+                        <a href="#">Blog</a>
+                    </li> -->
+    
+                    <li class="footer__navigation-item">
+                        <a href="#">Sheriklar</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="./contact.html">Bog'lanish</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <ul class="footer__socials">
+                <div class="footer__social">
+                    <a href="https://linkedin.com/in/diyorbekismoilov" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a href="https://t.me/diyorbek_ismoilov" class=""  target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a href="https://facebook.com/diyorbek.ismoiloff/ "  target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a href="https://instagram.com/diyorbek_ismailov"  target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a href="https://github.com/deeorbeck"  target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </ul>
+            <p class="footer__text">
+                Copyright &copy;2022 All rights reserved 
+            </p>
+        </div>
+    </footer>
+    <!-- /Footer section -->
+    <script>
+        function send_message () {   
+        let message = `Name: <pre>${document.getElementById('fn').value}</pre>Email: <pre>${document.getElementById('em').value}</pre>Subject: <pre>${document.getElementById('sub').value}</pre>Message: <pre>${document.getElementById('text').value}</pre>`; 
+        
+        if (document.getElementById('text').value){
+            fetch("https://api.telegram.org/bot1933805159:AAGYOWT70UooNWqhL4__sUCq-8vc9osLXdg/sendMessage?chat_id=1468429008&parse_mode=html&text=" + message) ;
+            alert("Xabaringiz jo\'natildi!")
+        }
+ }
+    </script>
+</body>
+</html>
