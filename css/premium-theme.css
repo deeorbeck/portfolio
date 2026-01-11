@@ -609,6 +609,15 @@ h1, h2, h3, h4, h5, h6,
   position: relative !important;
   height: auto !important;
   padding: 60px 0 40px !important;
+  z-index: 100 !important;
+}
+
+.unslate_co--footer a,
+.footer-site-social li a {
+  position: relative !important;
+  z-index: 101 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
 }
 
 .unslate_co--footer::before {
