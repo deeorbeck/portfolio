@@ -480,17 +480,21 @@ h1, h2, h3, h4, h5, h6,
 /* ---------- Contact Form Premium ---------- */
 .form-outline-style-v1 .form-group {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
 }
 
+.form-outline-style-v1 .form-group label,
 .form-outline-style-v1 label {
+  position: static !important;
   display: block !important;
   color: var(--text-secondary) !important;
-  font-size: 12px;
+  font-size: 12px !important;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 10px !important;
-  font-weight: 500;
+  margin-bottom: 12px !important;
+  margin-top: 0 !important;
+  font-weight: 600 !important;
+  top: auto !important;
 }
 
 .form-outline-style-v1 .form-control {
