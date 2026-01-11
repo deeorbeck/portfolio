@@ -946,22 +946,32 @@ h1, h2, h3, h4, h5, h6,
     font-size: 11px !important;
   }
   
-  /* Mobile Menu Fix */
-  .unslate_co--site-mobile-menu {
-    background: var(--bg-primary) !important;
-  }
-  
-  .unslate_co--site-mobile-menu .site-nav-ul li a,
-  .site-mobile-inner .site-nav-ul li a {
-    color: var(--text-primary) !important;
-    font-size: 16px !important;
-  }
-  
-  .unslate_co--site-mobile-menu .site-nav-ul li a:hover {
-    color: var(--accent-cyan) !important;
-  }
-  
-  .close-label {
-    color: var(--text-primary) !important;
-  }
+}
+
+/* Mobile Menu Fix - Global */
+.unslate_co--site-mobile-menu {
+  background: var(--bg-primary) !important;
+}
+
+.unslate_co--site-mobile-menu ul a,
+.unslate_co--site-mobile-menu ul li a,
+.unslate_co--site-mobile-menu .site-nav-ul li a,
+.site-mobile-inner .site-nav-ul li a,
+.site-mobile-inner ul li a {
+  color: #fff !important;
+  font-size: 16px !important;
+}
+
+.unslate_co--site-mobile-menu ul a:hover,
+.unslate_co--site-mobile-menu ul li a:hover {
+  color: var(--accent-cyan) !important;
+}
+
+.unslate_co--site-mobile-menu .close-label,
+.close-label {
+  color: #fff !important;
+}
+
+.unslate_co--site-mobile-menu ul > li.has-children .arrow-collapse:before {
+  color: #fff !important;
 }
