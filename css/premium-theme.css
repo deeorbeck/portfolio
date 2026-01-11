@@ -975,3 +975,41 @@ h1, h2, h3, h4, h5, h6,
 .unslate_co--site-mobile-menu ul > li.has-children .arrow-collapse:before {
   color: #fff !important;
 }
+
+/* Portfolio Filter Mobile Fix */
+.filter-wrap,
+#filters {
+  position: relative;
+  z-index: 100 !important;
+}
+
+@media (max-width: 991.98px) {
+  .filter-wrap {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: var(--bg-primary) !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    z-index: 1000 !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5) !important;
+  }
+  
+  #filters {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  
+  #filters a {
+    display: block !important;
+    text-align: center !important;
+    padding: 12px 20px !important;
+  }
+  
+  .gsap-reveal-filter {
+    position: relative !important;
+    z-index: 100 !important;
+  }
+}
