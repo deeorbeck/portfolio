@@ -721,6 +721,22 @@ h1, h2, h3, h4, h5, h6,
   background: var(--accent-cyan);
 }
 
+/* ---------- Disable GSAP Black Cover Animation ---------- */
+.gsap-reveal .cover,
+.gsap-reveal-hero .reveal-wrap .cover,
+.gsap-reveal-img .reveal-wrap .cover {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+.gsap-reveal-hero .reveal-wrap .reveal-content,
+.gsap-reveal-img .reveal-wrap .reveal-content {
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 /* ---------- AOS Animation Enhancements ---------- */
 [data-aos] {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
