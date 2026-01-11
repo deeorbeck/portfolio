@@ -463,18 +463,168 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 10px;
 }
 
-/* ---------- About Section ---------- */
-#about-section .heading-h3 span {
-  font-size: 2rem !important;
-  color: var(--text-primary) !important;
-  display: block;
+/* ---------- About Section Premium ---------- */
+.about-header .about-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.about-header .about-role {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
   margin-bottom: 20px;
 }
 
-#about-section .lead {
-  color: var(--text-secondary) !important;
-  font-size: 1.1rem !important;
-  line-height: 1.8 !important;
+.about-contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-contacts a {
+  color: var(--text-muted);
+  font-size: 14px;
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-contacts a:hover {
+  color: var(--accent-cyan);
+}
+
+.about-section-title {
+  font-size: 1.3rem;
+  color: var(--accent-cyan);
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.about-summary p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Experience Items */
+.experience-item {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: var(--transition-smooth);
+}
+
+.experience-item:hover {
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.exp-header {
+  margin-bottom: 15px;
+}
+
+.exp-header h5 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.exp-company {
+  color: var(--accent-cyan);
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.exp-date {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.exp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-list li {
+  color: var(--text-secondary);
+  padding: 8px 0;
+  padding-left: 20px;
+  position: relative;
+  font-size: 15px;
+}
+
+.exp-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent-cyan);
+}
+
+.exp-list li strong {
+  color: var(--text-primary);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill-category {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.skill-category h6 {
+  color: var(--text-muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tags span {
+  background: rgba(6, 182, 212, 0.15);
+  color: var(--accent-cyan);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Mobile About */
+@media (max-width: 768px) {
+  .about-header .about-name {
+    font-size: 1.8rem;
+  }
+  
+  .about-contacts {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* ---------- Contact Form Premium ---------- */
