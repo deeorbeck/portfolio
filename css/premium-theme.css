@@ -68,6 +68,15 @@ body::before {
 a, button, input, textarea, .btn, .portfolio-item, .nav-link {
   position: relative;
   z-index: 10;
+  cursor: pointer;
+}
+
+/* Remove all pointer-events blocking overlays */
+body::before,
+body::after,
+.cover-v1::before,
+.cover-v1::after {
+  pointer-events: none !important;
 }
 
 /* ---------- Typography ---------- */
@@ -489,14 +498,16 @@ h1, h2, h3, h4, h5, h6,
   border: 1px solid var(--glass-border) !important;
   border-radius: 12px !important;
   color: var(--text-primary) !important;
-  padding: 18px 20px !important;
+  padding: 16px 24px !important;
   transition: var(--transition-smooth);
   font-size: 15px;
+  width: 100%;
 }
 
 .form-outline-style-v1 .form-control::placeholder {
   color: var(--text-muted) !important;
-  opacity: 0.6;
+  opacity: 0.7;
+  padding-left: 0 !important;
 }
 
 .form-outline-style-v1 .form-control:focus {
@@ -572,12 +583,19 @@ h1, h2, h3, h4, h5, h6,
   text-transform: uppercase;
   font-size: 13px;
   transition: var(--transition-smooth);
-  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .btn-gradient-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(6, 182, 212, 0.4);
+  box-shadow: none !important;
+}
+
+.btn-gradient-primary:focus,
+.btn-gradient-primary:active {
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 /* ---------- Footer Premium ---------- */
