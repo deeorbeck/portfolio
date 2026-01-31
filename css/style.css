@@ -2102,3 +2102,224 @@ span.error {
 #portfolios-wrapper span {
   width: 0;
 }
+
+/* Testimonials Section Styles */
+.counter-box {
+  background: rgba(99, 102, 241, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  transition: all 0.3s ease;
+}
+
+.counter-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+}
+
+.counter-box .counter {
+  font-size: 48px;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 5px;
+}
+
+.counter-box p {
+  font-size: 14px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+.testimonial-content {
+  padding: 0;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-text:before {
+  content: "\"";
+  font-size: 60px;
+  color: #6366f1;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  opacity: 0.3;
+}
+
+.testimonial-text:after {
+  content: "\"";
+  font-size: 60px;
+  color: #6366f1;
+  position: absolute;
+  bottom: -40px;
+  right: 10px;
+  opacity: 0.3;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-author strong {
+  color: #fff;
+  font-size: 16px;
+}
+
+.testimonial-author span {
+  color: #6366f1;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CTA Buttons Enhancement */
+.btn-gradient-primary {
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+}
+
+.btn-gradient-primary:hover {
+  box-shadow: 0 15px 40px rgba(99, 102, 241, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Trust Signals */
+.trust-badge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.1);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #6366f1;
+  margin: 5px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+
+
+/* Trust Boxes */
+.trust-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.trust-box h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.trust-box p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+
+/* Footer Trust Badges in Social Links */
+.footer-site-social a {
+  position: relative;
+}
+
+.footer-site-social .trust-badge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.2);
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  color: #6366f1;
+  margin-left: 8px;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.footer-site-social a:hover .trust-badge {
+  background: rgba(99, 102, 241, 0.4);
+}
+
+
+
+/* Mobile Contact Form Optimization */
+@media (max-width: 767.98px) {
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-control {
+    padding: 12px 15px;
+    font-size: 16px; /* Prevent iOS zoom */
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .contact-info-val {
+    font-size: 14px;
+  }
+
+  .trust-box {
+    padding: 20px;
+  }
+
+  .trust-box h4 {
+    font-size: 16px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .counter-box {
+    padding: 20px;
+  }
+
+  .counter-box .counter {
+    font-size: 36px;
+  }
+
+  .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Touch-friendly buttons */
+@media (hover: none) and (pointer: coarse) {
+  .btn-gradient-primary,
+  .btn-outline-pill {
+    min-height: 44px;
+    min-width: 44px;
+    font-size: 16px;
+  }
+}
+

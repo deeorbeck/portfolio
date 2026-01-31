@@ -1,13 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/0.9">
+
+  <!-- Home page -->
   <url>
-    <loc>https://www.ismailov.uz/</loc>
+    <loc>https://ismailov.uz/</loc>
     <priority>1.0</priority>
+    <lastmod>2026-01-31</lastmod>
   </url>
+
+  <!-- Projects -->
   <url>
-    <loc>https://www.ismailov.uz/older/index.html</loc>
+    <loc>https://ismailov.uz/#portfolio-section</loc>
+    <priority>0.9</priority>
+    <lastmod>2026-01-31</lastmod>
   </url>
+
+  <!-- Individual Projects -->
   <url>
-    <loc>https://www.ismailov.uz/older/contact.html</loc>
+    <loc>https://t.me/teamworkuz_bot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
   </url>
+
+  <url>
+    <loc>https://e-learning.o3.uz/</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/taqdimot_robot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://calenda.uz/</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://optimusinvest.org/</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://tqdm.ismailov.uz/</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://felidclassification.streamlit.app/</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <!-- New projects -->
+  <url>
+    <loc>https://lumin.uz/</loc>
+    <priority>0.8</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://slaydplus.uz/</loc>
+    <priority>0.8</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/Diskontuz_bot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/MathMilliySertifikatRash_bot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/speakflow_ai_bot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/MaklersizTopbot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/azohisoblovchi_bot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/diskont_promobot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/doodmallbot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/hamsuhbataibot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/KanalSavdoBot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/kirimchiqmbot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <url>
+    <loc>https://t.me/TovarAsistentBot</loc>
+    <priority>0.7</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <!-- About section -->
+  <url>
+    <loc>https://ismailov.uz/#about-section</loc>
+    <priority>0.8</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <!-- Services section -->
+  <url>
+    <loc>https://ismailov.uz/#services-section</loc>
+    <priority>0.8</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
+  <!-- Contact section -->
+  <url>
+    <loc>https://ismailov.uz/#contact-section</loc>
+    <priority>0.8</priority>
+    <lastmod>2026-01-31</lastmod>
+  </url>
+
 </urlset>
