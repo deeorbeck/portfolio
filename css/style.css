@@ -1,3 +1,54 @@
+/* Dark Mode Toggle - Fixed position */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+  background: rgba(99, 102, 241, 0.3);
+  transform: scale(1.1);
+}
+
+.dark-mode-toggle i {
+  font-size: 20px;
+  color: #6366f1;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212 !important;
+}
+
+body.dark-mode .unslate_co--site-wrap,
+body.dark-mode .unslate_co--section,
+body.dark-mode .unslate_co--footer {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode a {
+  color: #fff !important;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
 body {
   font-family: "Raleway", sans-serif;
